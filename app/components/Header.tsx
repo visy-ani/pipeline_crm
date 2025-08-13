@@ -30,7 +30,7 @@ export default function Header({
     <header className="header">
       <div className="logo">
         <span className="sparkle" />
-        <h1>Shiny CRM Kanban</h1>
+        <h1>Pipeline CRM</h1>
       </div>
       <div className="controls">
         <div className="search">
