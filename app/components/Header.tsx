@@ -42,7 +42,7 @@ export default function Header({
         </div>
         <select
           value={ownerFilter}
-          onChange={(e) => setOwnerFilter(e.target.value as any)}
+          onChange={(e) => setOwnerFilter(e.target.value as string | "all")}
         >
           <option value="all">All owners</option>
           {owners.map((o) => (
@@ -53,7 +53,7 @@ export default function Header({
         </select>
         <select
           value={sortKey}
-          onChange={(e) => setSortKey(e.target.value as any)}
+          onChange={(e) => setSortKey(e.target.value as "value" | "age" | "prob")}
         >
           <option value="value">Sort: Value</option>
           <option value="age">Sort: Newest</option>

@@ -3,7 +3,6 @@ import React, { useState, useMemo, useEffect } from "react";
 import { Deal, Stage, stages } from "../types";
 import { seedDeals } from "../seedDeals";
 import { useConfetti } from "../hooks/useConfetti";
-import { currency } from "../utils";
 import Header from "./Header";
 import KPIBar from "./KPIBar";
 import Modal from "./Modal";

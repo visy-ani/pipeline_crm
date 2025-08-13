@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { Stage, stages } from "../types";
+import { Deal, Stage, stages } from "../types";
 
 type QuickAddFormProps = {
   owners: string[];
-  onCreate: (d: Partial<any>) => void;
+  onCreate: (d: Partial<Deal>) => void;
 };
 
 export default function QuickAddForm({ owners, onCreate }: QuickAddFormProps) {
