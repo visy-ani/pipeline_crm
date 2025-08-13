@@ -1,0 +1,117 @@
+:root {
+    --bg: #0b1020;
+    --panel: #0f1730;
+    --muted: #9bb0d1;
+    --text: #eaf2ff;
+    --accent: #6ee7ff;
+    --accent2: #ff82d3;
+    --success: #3ee98a;
+    --warn: #ffd166;
+    --danger: #ff5c93;
+    --card: #121c3a;
+}
+
+[data-theme='light'] {
+    --bg: #f6f8ff;
+    --panel: #ffffff;
+    --muted: #3a4a6b;
+    --text: #0b1020;
+    --accent: #186efc;
+    --accent2: #b417ff;
+    --success: #0aa968;
+    --warn: #b98a00;
+    --danger: #c5224a;
+    --card: #ffffff;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system,
+        Segoe UI, Roboto, Inter, "Poppins", Arial;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.app {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Background orbs */
+.bg-orb {
+    position: fixed;
+    inset: auto -10% -10% auto;
+    width: 40vw;
+    height: 40vw;
+    filter: blur(80px);
+    border-radius: 50%;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.orb1 {
+    top: -10%;
+    left: -10%;
+    background: radial-gradient(circle at 30% 30%, #2b6cf6, transparent 60%);
+    animation: float 12s ease-in-out infinite;
+}
+
+.orb2 {
+    top: 10%;
+    right: -10%;
+    background: radial-gradient(circle at 70% 50%, #ff4fb9, transparent 60%);
+    animation: float 16s ease-in-out infinite;
+}
+
+.orb3 {
+    bottom: -15%;
+    left: 20%;
+    background: radial-gradient(circle at 50% 50%, #16e0b1, transparent 60%);
+    animation: float 18s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Confetti canvas */
+.confetti {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+}
