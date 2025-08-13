@@ -1,4 +1,4 @@
-# Pipeline CRM
+![Pipeline CRM](/public/name.png)
 
 **Pipeline CRM** is an interactive, single-page Kanban-style CRM board built with Next.js 15 and React. It provides a visually appealing way to track sales deals across pipeline stages with drag-and-drop support, dynamic filtering, sorting, and celebratory confetti effects on deal wins. The app is fully client-side, requires no backend, and supports a clean light/dark theme with responsive design.
 
